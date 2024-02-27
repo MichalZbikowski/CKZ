@@ -22,7 +22,7 @@
             <li><a href="wszyscy.php"> wszyscy uczniowie</a></li>
         </ul>
     <form type="text" method="POST" action = "insert.php">
-		<div id="inputAddUczen">
+		<div id="formAddUczen">
             <p class="inputlabels">Imie:</p> <input type="text" name= "imie">                   
             <p class="inputlabels">Miejscowosc: </p><input type="text" name= "miejscowosc"> 
             
@@ -34,6 +34,7 @@
             <p class="inputlabels">Numer Lokalu:</p> <input type="number" name= "numer_lokalu"> 
             <p class="inputlabels">Klasa:</p>  <select name="klasa" id="">
                     <?php 
+                    error_reporting(0);
                         $host = 'localhost';
                         $login = 'root';
                         $password = '';
@@ -59,29 +60,32 @@
                     ?>
             </select>
             <p class="inputlabels">Ulica:</p> <input type="text" name= "ulica"> 
-            <input id="submitDodaj" type="submit"  name="submit"value="DODAJ">
+            <input id="submitDodajUcznia" type="submit"  name="submit"value="DODAJ">
         </div>
        
 </form>
 <form type="text" method="POST" action = "delete.php">  
-<div id="inputDeleteUczen">      
-        id:<input id="klasa_usuwanie" type="text" name= "id2"> <br>
-        <input id="submit" name="sumbit2"  type="submit" value="usun" > <br>
+<div id="formDeleteUczen">      
+<p class="inputlabels">ID:</p><input id="inputUsuwanieUcznia" type="text" name= "id2">
+        <input id="submitUsunUcznia" name="sumbit2"  type="submit" value="USUŃ" >
         </form>
                     </div>  
 <form type="text" method="POST">
-        wyszukaj ucznia: <input type="text" name="search_input"><br> <br> <br>
-        <input type="submit" id="submit" name="submit2">
+<div id="formSearchUczen">    
+<p class="inputlabels">Wyszukaj Ucznia:</p> <input id="inputSearchUcznia" type="text" name="search_input"><br> <br> <br>
+        <input type="submit" id="submitSearchUcznia" name="submit2" value="WYSZUKAJ">
+</div>
 </form>
+<div id="tabelaDiv">
     <table>
-    <td width="50" align="center" bgcolor="e5e5e5">id</td>
-    <td width="50" align="center" bgcolor="e5e5e5">imie</td>
-    <td width="100" align="center" bgcolor="e5e5e5">nazwisko</td>
-    <td width="100" align="center" bgcolor="e5e5e5">ulica</td>
-    <td width="100" align="center" bgcolor="e5e5e5">numer_domu</td>
-    <td width="100" align="center" bgcolor="e5e5e5">numer_lokalu</td>
-    <td width="100" align="center" bgcolor="e5e5e5">miejscowosc</td>
-    <td width="100" align="center" bgcolor="e5e5e5">klasa</td><tr>
+    <th width="50" align="center" bgcolor="e5e5e5">id</th>
+    <th width="50" align="center" bgcolor="e5e5e5">imie</th>
+    <th width="100" align="center" bgcolor="e5e5e5">nazwisko</th>
+    <th width="100" align="center" bgcolor="e5e5e5">ulica</th>
+    <th width="100" align="center" bgcolor="e5e5e5">numer_domu</th>
+    <th width="100" align="center" bgcolor="e5e5e5">numer_lokalu</th>
+    <th width="100" align="center" bgcolor="e5e5e5">miejscowosc</th>
+    <th width="100" align="center" bgcolor="e5e5e5">klasa</th><tr>
     <?php
     
     $usuwaniepustych = "DELETE FROM uczniowie WHERE  imie='' or nazwisko='' ";
@@ -124,7 +128,7 @@
 ?>
 
 
-</tr></table>
+</tr></table></div>
     </main>
     <div id="rightBanner">
 

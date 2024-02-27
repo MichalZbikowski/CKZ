@@ -24,9 +24,11 @@
             
         </ul>
     <form action="" method="post">
-        wyszukaj ucznia: <input type="text" name="search_input"><br>
-        <select name="klasa_select" id="">
+    <div id="formSearchUczen"> 
+    <p class="inputlabels">Wyszukaj Ucznia:</p> <input type="text" name="search_input"><br>
+        <select name="klasa_select" id="selectWyborKlasy">
             <?php
+            error_reporting(0);
                  $host = 'localhost';
                  $login = 'root';
                  $password = '';
@@ -50,16 +52,17 @@
             ?>
         </select>
     
-        <input type="submit" value="WYŚLIJ">
+        <input type="submit" id="submitSearchUcznia" value="WYSZUKAJ"></div>
     </form>
+    <div id="tabelaDiv">
     <table>
-    <td width="50" align="center" bgcolor="e5e5e5">imie</td>
-    <td width="100" align="center" bgcolor="e5e5e5">nazwisko</td>
-    <td width="100" align="center" bgcolor="e5e5e5">ulica</td>
-    <td width="100" align="center" bgcolor="e5e5e5">numer_domu</td>
-    <td width="100" align="center" bgcolor="e5e5e5">numer_lokalu</td>
-    <td width="100" align="center" bgcolor="e5e5e5">miejscowosc</td>
-    <td width="100" align="center" bgcolor="e5e5e5">klasa</td><tr>
+    <th width="50" align="center" bgcolor="e5e5e5">imie</th>
+    <th width="100" align="center" bgcolor="e5e5e5">nazwisko</th>
+    <th width="100" align="center" bgcolor="e5e5e5">ulica</th>
+    <th width="100" align="center" bgcolor="e5e5e5">numer_domu</th>
+    <th width="100" align="center" bgcolor="e5e5e5">numer_lokalu</th>
+    <th width="100" align="center" bgcolor="e5e5e5">miejscowosc</th>
+    <th width="100" align="center" bgcolor="e5e5e5">klasa</th><tr>
     <?php
     
 
@@ -102,7 +105,7 @@
 ?>
 
 
-</tr></table>
+</tr></table></div>
     </main>
     <div id="rightBanner">
 

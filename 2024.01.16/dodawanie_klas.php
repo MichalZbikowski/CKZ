@@ -43,12 +43,14 @@
 wyszukaj klase: <input type="text" name="search_input"><br><br> <br>
         <input type="submit" id="submit" name="submit2">
 </form>
+<div id="tabelaDiv">
     <table>
-        <td width="50" align="center" bgcolor="e5e5e5">klasa</td>
-    <td width="50" align="center" bgcolor="e5e5e5">imie wychowawcy</td>
-    <td width="100" align="center" bgcolor="e5e5e5">nazwisko wychowawcy</td>
+        <th width="50" align="center" bgcolor="e5e5e5">klasa</th>
+    <th width="50" align="center" bgcolor="e5e5e5">imie wychowawcy</th>
+    <th width="100" align="center" bgcolor="e5e5e5">nazwisko wychowawcy</th>
   
     <?php
+    error_reporting(0);
     $host = 'localhost';
     $login = 'root';
     $password = '';
@@ -86,6 +88,8 @@ wyszukaj klase: <input type="text" name="search_input"><br><br> <br>
 	}
 
 ?>
+</table>
+</div>
     </main>
     <div id="rightBanner">
 

@@ -99,11 +99,9 @@ input:focus{
     border-radius: 4px;
 }
 
-.inputlabels{
 
-}
 
-#inputAddUczen{
+#formAddUczen{
     padding: 50px;
     display: grid;
     grid-template: 1fr 1fr 1fr /  1fr 1fr 1fr 1fr 1fr 1fr;
@@ -111,7 +109,93 @@ input:focus{
     row-gap: 10px;
 }
 
-#submitDodaj{
+#submitDodajUcznia{
     grid-column: span 2;
-    height: 100%    ;
+    height: 52px;
+}
+
+#formDeleteUczen{
+    border-top: #588157 solid 2px;
+    padding: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: ro;
+}
+
+#submitUsunUcznia{
+    width: 30%;
+    height: 52px;
+}
+
+#inputUsuwanieUcznia{
+    width: 40%;
+}
+
+#formSearchUczen{
+    border-top: #588157 solid 2px;
+    padding: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: ro;
+}
+
+#inputSearchUcznia{
+    width: 40%;
+}
+
+
+
+#submitSearchUcznia{
+    width: 30%;
+    height: 52px;
+}
+
+#tabelaDiv{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    padding-bottom: 50px;    
+}
+
+#tabelaDiv>table{
+    width: 80%;   
+}
+
+#tabelaDiv>table>tr{
+    height: 25px;   
+}
+
+
+th{
+    height: 50px;
+}
+
+td{
+    border-bottom: 1px solid black;
+    
+}
+
+#selectWyborKlasy{
+    width: 25%;
+    text-align: center;
+}
+
+#zapraszamy{
+    width: 100%;
+}
+
+#spacer{
+    font-size: 25px;
+    color: #344E41;
+}
+
+#spacerdiv{
+    padding: 10px;
+
+}
+
+
+main a{
+    font-size: 20px;
+    color:white;
 }
