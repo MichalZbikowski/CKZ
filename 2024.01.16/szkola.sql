@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Czas generowania: 27 Lut 2024, 07:20
+-- Czas generowania: 27 Lut 2024, 10:15
 -- Wersja serwera: 10.4.27-MariaDB
 -- Wersja PHP: 8.2.0
 
@@ -38,18 +38,17 @@ CREATE TABLE `klasy` (
 --
 
 INSERT INTO `klasy` (`klasa`, `imie_wychowawcy`, `nazwisko_wychowawcy`) VALUES
-('2a', 'Emilia', 'Podsiadło'),
 ('4c', 'Adam', 'Bartoszek'),
 ('3b', 'Helena', 'Nowak'),
 ('2in', 'Andrzej', 'Lasak'),
 ('2c', 'Bartłomiej', 'Psikuta'),
-('2a', 'Wiesław', 'Baczyński'),
 ('5b', 'Andrzej', 'Ptaszny'),
 ('4el', 'Wiktoria', 'Brykło'),
 ('1a', 'Edyta', 'Gari'),
 ('2h', 'Stanisława', 'Dziwnówna'),
 ('3r', 'Josh', 'Lanos'),
-('2pb', 'Wacław', 'Gardziejewski');
+('2pb', 'Wacław', 'Gardziejewski'),
+('2a', 'Emilia', 'DDDDDD');
 
 -- --------------------------------------------------------
 
@@ -110,7 +109,7 @@ ALTER TABLE `uczniowie`
 -- AUTO_INCREMENT dla tabeli `uczniowie`
 --
 ALTER TABLE `uczniowie`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=131;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=133;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
