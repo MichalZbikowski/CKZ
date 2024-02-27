@@ -12,11 +12,12 @@
         Strona szkoły
     </header>
     <div id="item4">
-    <img src="zapraszamy.png" id="zapraszamy" alt="mojamorda">
-    <div id="spacerdiv"><a id="spacer" href="https://www.google.com/maps/@49.9510139,18.6112789,3a,75y,314.18h,90.76t/data=!3m6!1e1!3m4!1sAF1QipNlEg-WRoRouTKPuyD7e9FCoBmOCZnZvuyg_x0M!2e10!7i6000!8i3000?hl=pl-PL&entry=ttu">Na wirtualny spacer po naszej szkole!</a></div>
+    
+    
     </div id="item4">
     <main>
     <ul>
+        <li><a href="main.php"> Strona Główna</a></li>
             <li>
                 <a href="modyfikowanie.php">Dodawanie i usuwanie uczniow</a>
             </li>
@@ -24,7 +25,10 @@
             <li><a href="wszyscy.php"> Wszyscy uczniowie</a></li>
         </ul>
         
-     
+        <div id="zapraszamy">
+        <img src="zapraszamy.png" id="zapraszamy" alt="mojamorda">
+        <div id="spacerdiv"><a id="spacer" href="https://www.google.com/maps/@49.9510139,18.6112789,3a,75y,314.18h,90.76t/data=!3m6!1e1!3m4!1sAF1QipNlEg-WRoRouTKPuyD7e9FCoBmOCZnZvuyg_x0M!2e10!7i6000!8i3000?hl=pl-PL&entry=ttu">Na wirtualny spacer po naszej szkole!</a></div>
+        </div>
     </main>
     <div id="rightBanner">
 

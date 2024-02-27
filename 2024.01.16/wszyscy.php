@@ -18,10 +18,10 @@
     <ul>
         <li><a href="main.php"> Strona Główna</a></li>
             <li>
-                <a href="modyfikowanie.php">dodawanie i usuwanie uczniow</a>
+                <a href="modyfikowanie.php">Dodawanie i usuwanie uczniow</a>
             </li>
-            <li><a href="dodawanie_klas.php"> dodawnie klas</a></li>
-            
+            <li><a href="dodawanie_klas.php"> Dodawnie klas</a></li>
+            <li><a href="wszyscy.php"> Wszyscy uczniowie</a></li>
         </ul>
     <form action="" method="post">
     <div id="formSearchUczen"> 

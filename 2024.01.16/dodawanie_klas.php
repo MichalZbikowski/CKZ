@@ -18,30 +18,35 @@
 
     </div id="item4">
     <main>
+
     <ul>
-    <li><a href="main.php"> Strona Główna</a></li>
+        <li><a href="main.php"> Strona Główna</a></li>
             <li>
-                <a href="modyfikowanie.php">dodawanie i usuwanie uczniow</a>
+                <a href="modyfikowanie.php">Dodawanie i usuwanie uczniow</a>
             </li>
-            
-            <li><a href="wszyscy.php"> wszyscy uczniowie</a></li>
+            <li><a href="dodawanie_klas.php"> Dodawnie klas</a></li>
+            <li><a href="wszyscy.php"> Wszyscy uczniowie</a></li>
         </ul>
-        
-    <form type="text" method="POST" action = "insert_klasa.php">
-		
-        imie wychowawcy:<input type="text" name= "imie_wychowawcy"><br>             
-		nazwisko wychowawcy:<input type="text" name= "nazwisko_wychowawcy"> <br>
-        klasa: <input type="text" name= "klasa"> <br>
-        <input id="submit" type="submit"  name="submit"value="dodaj"><br> <br> <br>
+<form type="text" method="POST" action = "insert_klasa.php">
+	<div id="formAddKlasa"> 	
+        <p class="inputlabels">Imie wychowawcy:</p><input type="text" name= "imie_wychowawcy">        
+        <p class="inputlabels">Nazwisko wychowawcy:</p><input type="text" name= "nazwisko_wychowawcy"> 
+        <p class="inputlabels">Klasa: </p><input type="text" name= "klasa"><br>
+        <input id="submitAddKlasa" type="submit"  name="submit"value="DODAJ">
+    </div>
 </form>
-<form type="text" method="POST" action = "delete_klasa.php">        
-        usuwanie klasy:<input id="id2" type="text" name= "klasa2"> <br>
-        <input id="submit" name="sumbit2"  type="submit" value="usun" > <br>
-    </form>
+<form type="text" method="POST" action = "delete_klasa.php">    
+    <div id="formDeleteKlasa">     
+        <p class="inputlabels">Usuwanie klasy:</p><input id="inputUsunwanieKlasy" type="text" name= "klasa2"> <br>
+        <input id="submitUsunKlase" name="sumbit2"  type="submit" value="USUŃ" > <br>
+    </div>
+</form>
         
 <form type="text" method="POST">
-wyszukaj klase: <input type="text" name="search_input"><br><br> <br>
-        <input type="submit" id="submit" name="submit2">
+    <div id="formSearchKlasa"> 
+        <p class="inputlabels">Wyszukaj Klase: </p><input type="text" id="inputSearchKlasa"name="search_input"><br><br> <br>
+        <input type="submit" id="submitWyszukajKlase" value="WYSZUKAJ"name="submit2">
+    </div>
 </form>
 <div id="tabelaDiv">
     <table>

@@ -15,11 +15,12 @@
     </div id="item4">
     <main>
     <ul>
+        <li><a href="main.php"> Strona Główna</a></li>
             <li>
-                <a href="main.php">Strona Główna</a>
+                <a href="modyfikowanie.php">Dodawanie i usuwanie uczniow</a>
             </li>
-            <li><a href="dodawanie_klas.php"> dodawnie klas</a></li>
-            <li><a href="wszyscy.php"> wszyscy uczniowie</a></li>
+            <li><a href="dodawanie_klas.php"> Dodawnie klas</a></li>
+            <li><a href="wszyscy.php"> Wszyscy uczniowie</a></li>
         </ul>
     <form type="text" method="POST" action = "insert.php">
 		<div id="formAddUczen">

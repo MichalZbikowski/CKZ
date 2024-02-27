@@ -109,6 +109,17 @@ input:focus{
     row-gap: 10px;
 }
 
+#formAddKlasa{
+    padding: 50px;
+    display: grid;
+    grid-template: 1fr 1fr /  1fr 1fr 1fr 1fr 1fr 1fr;
+    column-gap: 40px;
+    row-gap: 10px;
+}
+#submitAddKlasa{
+    grid-column: span 6 ;
+}
+
 #submitDodajUcznia{
     grid-column: span 2;
     height: 52px;
@@ -119,16 +130,54 @@ input:focus{
     padding: 50px;
     display: flex;
     justify-content: space-evenly;
-    flex-direction: ro;
+
 }
+
+#formDeleteKlasa{
+    border-top: #588157 solid 2px;
+    padding: 50px;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+#formSearchKlasa{
+    border-top: #588157 solid 2px;
+    padding: 50px;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+
+#inputSearchKlasa{
+    width: 40%;
+}
+
+#submitWyszukajKlase{
+    width: 30%;
+    height: 52px;
+}
+
 
 #submitUsunUcznia{
     width: 30%;
     height: 52px;
 }
 
+#submitUsunKlase{
+    width: 30%;
+    height: 52px;
+}
+
+
 #inputUsuwanieUcznia{
     width: 40%;
+}
+
+#inputUsunwanieKlasy{
+    width: 40%;
+
 }
 
 #formSearchUczen{
