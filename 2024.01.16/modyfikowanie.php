@@ -22,10 +22,17 @@
             <li><a href="wszyscy.php"> wszyscy uczniowie</a></li>
         </ul>
     <form type="text" method="POST" action = "insert.php">
-		<div id="inputAddDiv">
-            <p class="inputlabels">imie:</p> <input type="text" name= "imie">                   
-            <p class="inputlabels">nazwisko:</p> <input type="text" name= "nazwisko"> 
-            <p class="inputlabels">klasa:</p>  <select name="klasa" id="">
+		<div id="inputAddUczen">
+            <p class="inputlabels">Imie:</p> <input type="text" name= "imie">                   
+            <p class="inputlabels">Miejscowosc: </p><input type="text" name= "miejscowosc"> 
+            
+             
+           
+            <p class="inputlabels">Numer Domu: </p><input type="text" name= "numer_domu"> 
+            <p class="inputlabels">Nazwisko:</p> <input type="text" name= "nazwisko"> 
+            <p class="inputlabels">Kod Pocztowy:</p> <input type="text" name= "kod_pocztowy">
+            <p class="inputlabels">Numer Lokalu:</p> <input type="number" name= "numer_lokalu"> 
+            <p class="inputlabels">Klasa:</p>  <select name="klasa" id="">
                     <?php 
                         $host = 'localhost';
                         $login = 'root';
@@ -51,17 +58,13 @@
                     
                     ?>
             </select>
-            <p class="inputlabels">kod pocztowy:</p> <input type="text" name= "kod_pocztowy"> <br>
-            miejscowosc: <input type="text" name= "miejscowosc"> <br>
-            numer domu: <input type="text" name= "numer_domu"> <br>
-            numer lokalu: <input type="number" name= "numer_lokalu"> <br>
-            ulica: <input type="text" name= "ulica"> <br>
-            <input id="submitDodaj" type="submit"  name="submit"value="dodaj"><br> <br> <br>
+            <p class="inputlabels">Ulica:</p> <input type="text" name= "ulica"> 
+            <input id="submitDodaj" type="submit"  name="submit"value="DODAJ">
         </div>
        
 </form>
 <form type="text" method="POST" action = "delete.php">  
-<div id="inputDeleteDiv">      
+<div id="inputDeleteUczen">      
         id:<input id="klasa_usuwanie" type="text" name= "id2"> <br>
         <input id="submit" name="sumbit2"  type="submit" value="usun" > <br>
         </form>

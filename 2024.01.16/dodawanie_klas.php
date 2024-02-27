@@ -97,4 +97,5 @@ wyszukaj klase: <input type="text" name="search_input"><br><br> <br>
     <div id="item9"></div>
 </div>
 
-
+</body>
+</html>

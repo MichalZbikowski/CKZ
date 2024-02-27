@@ -9,10 +9,10 @@
 <body>
 <div class="grid-container">
     <header>
-        Strona szkoły <a href="https://www.google.com/maps/@49.9510139,18.6112789,3a,75y,314.18h,90.76t/data=!3m6!1e1!3m4!1sAF1QipNlEg-WRoRouTKPuyD7e9FCoBmOCZnZvuyg_x0M!2e10!7i6000!8i3000?hl=pl-PL&entry=ttu">wirtualny spacer po naszej szkole</a>
+        Strona szkoły
     </header>
     <div id="item4">
-        
+    <a href="https://www.google.com/maps/@49.9510139,18.6112789,3a,75y,314.18h,90.76t/data=!3m6!1e1!3m4!1sAF1QipNlEg-WRoRouTKPuyD7e9FCoBmOCZnZvuyg_x0M!2e10!7i6000!8i3000?hl=pl-PL&entry=ttu">wirtualny spacer po naszej szkole</a>
     </div id="item4">
     <main>
     <ul>

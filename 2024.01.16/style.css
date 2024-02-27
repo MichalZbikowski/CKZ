@@ -1,6 +1,7 @@
 body{
     background-color: #DAD7CD;
     margin: 0px;
+    font-family: Trebuchet MS;
 }
 
 .grid-container{
@@ -16,6 +17,20 @@ body{
     box-sizing: border-box;
 }
 
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:#dddddd;
+    font-size: 80px;
+    -webkit-text-stroke: 3px #000000;
+  
+    background-color: #344E41;
+    font-weight: 800;
+    grid-column:1/ span 3;
+
+}
+
 ul{
     display: flex;
     width: 100%;
@@ -24,10 +39,7 @@ ul{
     margin: 0px;
     
 }
-iframe{
-    width: 100%;
-    height: 600px;
-}
+
 li{
     border-left: #A3B18A solid 4px;
     
@@ -37,11 +49,7 @@ li{
     padding: 20px;;
     
 }
-header{
-    background-color: #344E41;
-    grid-column:1/ span 3;
 
-}
 
 footer{
     background-color: #313d37;
@@ -91,18 +99,19 @@ input:focus{
     border-radius: 4px;
 }
 
-.inputlabes{
-    display: flex;
-    width: 50px;
+.inputlabels{
+
 }
 
-#inputAddDiv{
+#inputAddUczen{
     padding: 50px;
     display: grid;
-    grid-template: 1fr 1fr 1fr 1fr /  1fr 1fr 1fr 1fr 1fr 1fr;
-    gap: 15px;
+    grid-template: 1fr 1fr 1fr /  1fr 1fr 1fr 1fr 1fr 1fr;
+    column-gap: 40px;
+    row-gap: 10px;
 }
 
 #submitDodaj{
-    grid-column: 1/span 6 ;
+    grid-column: span 2;
+    height: 100%    ;
 }
