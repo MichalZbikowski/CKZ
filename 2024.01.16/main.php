@@ -9,7 +9,7 @@
 <body>
 <div class="grid-container">
     <header>
-        Strona szkoły
+        Strona Główna
     </header>
     <div id="item4">
     
@@ -21,13 +21,17 @@
             <li>
                 <a href="modyfikowanie.php">Dodawanie i usuwanie uczniow</a>
             </li>
-            <li><a href="dodawanie_klas.php"> Dodawnie klas</a></li>
+            <li><a href="dodawanie_klas.php"> Dodawnie i usuwanie klas</a></li>
             <li><a href="wszyscy.php"> Wszyscy uczniowie</a></li>
         </ul>
         
         <div id="zapraszamy">
-        <img src="zapraszamy.png" id="zapraszamy" alt="mojamorda">
-        <div id="spacerdiv"><a id="spacer" href="https://www.google.com/maps/@49.9510139,18.6112789,3a,75y,314.18h,90.76t/data=!3m6!1e1!3m4!1sAF1QipNlEg-WRoRouTKPuyD7e9FCoBmOCZnZvuyg_x0M!2e10!7i6000!8i3000?hl=pl-PL&entry=ttu">Na wirtualny spacer po naszej szkole!</a></div>
+            <div></div>
+            <div id="spacerdiv"><a id="spacer" href="https://www.google.com/maps/@49.9510139,18.6112789,3a,75y,314.18h,90.76t/data=!3m6!1e1!3m4!1sAF1QipNlEg-WRoRouTKPuyD7e9FCoBmOCZnZvuyg_x0M!2e10!7i6000!8i3000?hl=pl-PL&entry=ttu">Zapraszamy na wirtualny <br> spacer po naszej szkole!</a></div>
+            <img src="zapraszamy.png" id="zapraszamyimg" alt="mojamorda">
+        </div>
+        <div>
+            <h1>Telefon Zaufania</h1>
         </div>
     </main>
     <div id="rightBanner">
@@ -35,7 +39,7 @@
     </div>
     <div id="item7"></div>
     <footer>
-        footer zrobione michal
+    ZS6 Sobieski - email: aaaaa@aaaa.com, Numer Telefonu: 112
     </footer>
     <div id="item9"></div>
 </div>

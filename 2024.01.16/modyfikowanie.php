@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zarządzanie uczniami</title><link rel="stylesheet" href="style.css">
+    <title>Dodawanie i usuwanie uczniów</title><link rel="stylesheet" href="style.css">
 </head>
 <body>
 <div class="grid-container">
     <header>
-        Strona szkoły
+    Dodawanie i usuwanie uczniów
     </header>
     <div id="item4">
        
@@ -17,9 +17,9 @@
     <ul>
         <li><a href="main.php"> Strona Główna</a></li>
             <li>
-                <a href="modyfikowanie.php">Dodawanie i usuwanie uczniow</a>
+                <a href="modyfikowanie.php">Dodawanie i usuwanie uczniów</a>
             </li>
-            <li><a href="dodawanie_klas.php"> Dodawnie klas</a></li>
+            <li><a href="dodawanie_klas.php"> Dodawnie i usuwanie klas</a></li>
             <li><a href="wszyscy.php"> Wszyscy uczniowie</a></li>
         </ul>
     <form type="text" method="POST" action = "insert.php">
@@ -136,7 +136,7 @@
     </div>
     <div id="item7"></div>
     <footer>
-        footer zrobione michal
+    ZS6 Sobieski - email: aaaaa@aaaa.com, Numer Telefonu: 112
     </footer>
     <div id="item9"></div>
 </div>

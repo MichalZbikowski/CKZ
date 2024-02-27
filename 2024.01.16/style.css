@@ -51,6 +51,7 @@ li{
 }
 
 
+
 footer{
     background-color: #313d37;
 }
@@ -234,17 +235,35 @@ td{
 }
 
 #spacer{
-    font-size: 25px;
+    font-size:70px;
     color: #344E41;
 }
 
 #spacerdiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 10px;
 
 }
 
 
-main a{
-    font-size: 20px;
+main li>a{
+    font-size:23px;
     color:white;
+}
+
+#zapraszamy{
+    display: flex;
+    justify-content: space-between;
+    border-bottom:3px #588157 solid ;
+}
+
+
+footer{
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
 }
